@@ -29,7 +29,7 @@ Start the API and web app together:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The frontend uses the hosted API by default; set `VITE_API_URL` in a local Vite environment file to use a different API base URL. Vite forwards `/api` requests to the hosted API and `/api-docs` requests to the local Express API on port `4000`.
+Open [http://localhost:3000](http://localhost:3000). The frontend uses the same-origin `/api/v1` path by default; Vite and Vercel forward `/api` requests to the hosted API. Set `VITE_API_URL` in a local Vite environment file only when using a different API base URL. Vite also forwards `/api-docs` requests to the local Express API on port `4000`.
 
 ## Available scripts
 
